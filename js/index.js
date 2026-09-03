@@ -13,6 +13,7 @@ async function buscarCidades() {
   let nome = campoCidade.value;
 
   elementoMensagem.textContent = "Buscando...";
+  elementoCidades.innerHTML = "";
 
   let resposta = await fetch(
     `https://brasilapi.com.br/api/cptec/v1/cidade/${nome}`,
